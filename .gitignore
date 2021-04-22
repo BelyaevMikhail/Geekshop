@@ -1,0 +1,6 @@
+_pycache__/
+.idea
+db.sqlite
+
+# Project exclude paths
+/venv/
