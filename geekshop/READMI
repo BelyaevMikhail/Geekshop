@@ -1,0 +1,20 @@
+Не запускается сайт PyCharm выдает ошибки:
+
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Projects\geekshop-server\venv\lib\site-packages\django\core\handlers\exception.py", line 47, in inner
+    response = get_response(request)
+  File "C:\Projects\geekshop-server\venv\lib\site-packages\django\core\handlers\base.py", line 181, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Projects\geekshop-server\geekshop\minapp\views.py", line 8, in index
+    return render(request, 'minapp/index.html')
+  File "C:\Projects\geekshop-server\venv\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Projects\geekshop-server\venv\lib\site-packages\django\template\loader.py", line 61, in render_to_string
+    template = get_template(template_name, using=using)
+  File "C:\Projects\geekshop-server\venv\lib\site-packages\django\template\loader.py", line 19, in get_template
+    raise TemplateDoesNotExist(template_name, chain=chain)
+django.template.exceptions.TemplateDoesNotExist: minapp/index.html
+[22/Apr/2021 14:53:08] "GET / HTTP/1.1" 500 76313
+Not Found: /favicon.ico
+[22/Apr/2021 14:53:09] "GET /favicon.ico HTTP/1.1" 404 2237
