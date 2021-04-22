@@ -125,5 +125,5 @@ STATICFILES_DIRS = (
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # страдания с Git попытка внести изменения для получения в результате Pull
-#def test (a, b):
-    #return a+b
+def test (a, b):
+    return a+b
