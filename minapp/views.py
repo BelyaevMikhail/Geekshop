@@ -5,7 +5,11 @@ from django.shortcuts import render
 # функции = контроллеры = вьюхи
 
 def index(request):
-    return render(request, 'minapp/index.html')
+    context = {'title', 'GeekShop'}
+    return render(request, 'minapp/index.html', context)
 
 def products(request):
-    return render(request, 'minapp/products.html')
+    context = {'title', 'GeekShop - Каталог'}
+    return render(request, 'minapp/products.html', context)
+
+
